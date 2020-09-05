@@ -33,5 +33,5 @@ def now_serving(array)
 end
 
 line_up = ["Logan", "Avi", "Spencer"]
-line_up.shift
+line_up.drop(1)
 now_serving(line_up)
