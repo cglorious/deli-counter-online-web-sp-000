@@ -25,7 +25,7 @@ def now_serving(array)
       puts "Currently serving #{element}."
       #array.drop #- how to take off first element and continue to iterate
       array.shift
-      array
+      #array
     end
   else
     puts "There is nobody waiting to be served!"
