@@ -24,7 +24,8 @@ def now_serving(array)
     array.map do |element| #map returns new array
       puts "Currently serving #{element}."
       #array.drop #- how to take off first element and continue to iterate
-      array.first
+      array.shift
+      array
     end
   else
     puts "There is nobody waiting to be served!"
@@ -32,4 +33,5 @@ def now_serving(array)
 end
 
 line_up = ["Logan", "Avi", "Spencer"]
+line_up.shift
 now_serving(line_up)
