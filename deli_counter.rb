@@ -27,7 +27,3 @@ def now_serving(array)
     puts "There is nobody waiting to be served!"
   end
 end
-
-line_up = ["Logan", "Avi", "Spencer"]
-line_up.shift
-now_serving(line_up)
