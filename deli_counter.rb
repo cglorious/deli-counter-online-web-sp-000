@@ -23,8 +23,8 @@ def now_serving(array)
   if array.length > 0
     array.map do |element| #map returns new array
       puts "Currently serving #{element}."
-      #array.drop(1) #- how to take off first element and continue to iterate
-      #array.shift
+      #array.drop #- how to take off first element and continue to iterate
+      array.first
     end
   else
     puts "There is nobody waiting to be served!"
