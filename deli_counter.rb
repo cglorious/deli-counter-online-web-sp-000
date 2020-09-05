@@ -21,17 +21,17 @@ end
 
 def now_serving(array)
   if array.length > 0
-    array.map do |element| #map returns new array
+    #array.map do |element| #map returns new array
       puts "Currently serving #{element}."
       #array.drop #- how to take off first element and continue to iterate
       array.shift
       #array
-    end
+    #end
   else
     puts "There is nobody waiting to be served!"
   end
 end
 
 line_up = ["Logan", "Avi", "Spencer"]
-line_up.drop(1)
+line_up.shift
 now_serving(line_up)
