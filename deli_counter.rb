@@ -22,7 +22,7 @@ end
 def now_serving(array)
   if array.length > 0
     #array.map do |element| #map returns new array
-      puts "Currently serving #{element}."
+      puts "Currently serving #{array[0]}."
       #array.drop #- how to take off first element and continue to iterate
       array.shift
       #array
